@@ -15,7 +15,7 @@ header{
     align-items: center;
     flex-direction: row;
     width: 100%;
-    height: 70px;
+    height: 60px;
     padding-top: 30px;
 }
 #left_sec{
@@ -55,15 +55,15 @@ header{
 #right_sec img{
     width: 30px;
 }
-@media (max-width: 677px) {
+@media (max-width: 773px) {
     #left_sec, #right_sec{
        display: None;
     }
     
     #top{
-        height: 70px;
+        height: 60px;
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
     }
     #one, #two, #three{
         background-color: black;
@@ -75,16 +75,61 @@ header{
         flex-direction: column;
         gap: 6px;
         position: absolute;
-        right:-60px;
+        right:30px;
     }
+    img{
+        width: 350px;
+        height: 350px;
+    }
+    #first_pro{
+        display: flex;
+        flex-direction:column-reverse;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px;
+    }
+    #second_pro{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px;
+    }
+    
 }
-@media (min-width:678px){
-   #top{
-    height: 70px;
-    display: flex;
-    justify-content:space-evenly;
-    gap: auto;
-   } 
+@media (min-width:773px){
+    #top{
+        height: 70px;
+        display: flex;
+        justify-content:space-evenly;
+        gap: auto;
+    } 
+    img{
+        width: 500px;
+        height: 500px;
+    }
+    #first_pro, #second_pro{
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        padding: 80px;
+    }
+    #first_info, #second_info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        font-size: 30px;
+    }
+    h1{
+        font-size:75px;
+    }
+    #image{
+        display: flex;
+        justify-content: center;
+        margin-left: 40px;
+    }
 }
 /* overlay */
 #overlay{
@@ -152,7 +197,7 @@ header{
 
 
 #ABOUT{
-    height: 100vh;
+    height: 60vh;
     margin: 10px;
     padding-top: 250px;
     padding-left: 100px;
@@ -160,7 +205,6 @@ header{
 
 h1{
     font-family: 'Playfair Display', serif;
-    font-size: 88px;
     font-weight: bold;
 }
 /* Projects */
@@ -172,36 +216,11 @@ h1{
     flex-direction: column;
     gap: 50px;
 }
-img{
-    width: 500px;
-    height: 500px;
-}
-#first_pro, #second_pro{
-    display: flex;
-    justify-content: space-between;
-    padding: 80px;
-}
-#first_info, #second_info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    font-size: 30px;
-}
 a{
     text-decoration: none;
     color: rgba(100, 113, 115, 0.611);
 }
-#image{
-    display: flex;
-    justify-content: center;
-    margin-left: 40px;
-}
-#second_pro{
-    display: flex;
 
-}
 /* Education */
 #Education{
     height: 100vh;
