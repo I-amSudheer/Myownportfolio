@@ -1,19 +1,22 @@
+
+/* Your other CSS rules start here */
 *{
     margin: 0;
 }
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
 }
 /* header */
-#top{
+
+header{
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     flex-direction: row;
-    position: fixed;
     width: 100%;
     height: 70px;
-    z-index: 1;
+    padding-top: 30px;
 }
 #left_sec{
     margin-left: 10px;
@@ -72,7 +75,7 @@ body{
         flex-direction: column;
         gap: 6px;
         position: absolute;
-        right:30px;
+        right:-60px;
     }
 }
 @media (min-width:678px){
@@ -146,33 +149,60 @@ body{
     
 }
 /* main */
-main{
-    height: 100vh;
-    gap: 20px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(226, 226, 226);
-}
+
 
 #ABOUT{
+    height: 100vh;
+    margin: 10px;
+    padding-top: 250px;
+    padding-left: 100px;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 88px;
+    font-weight: bold;
+}
+/* Projects */
+#pro_heading{
+    text-align: center;
+}
+#Projects{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+img{
+    width: 500px;
+    height: 500px;
+}
+#first_pro, #second_pro{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+}
+#first_info, #second_info{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
-    text-align: center;
-    max-width: 400px;
-    min-width: 300px;
-}
-
-#main_name{
-    font-weight: bold;
+    justify-content: center;
+    gap: 30px;
     font-size: 30px;
 }
-section p{
-  font-family: 'Poppins', 'Open Sans', 'Roboto', sans-serif;
-  font-weight: 300; /* Light or Regular */
-  color: #555;
-  line-height: 1.6;
+a{
+    text-decoration: none;
+    color: rgba(100, 113, 115, 0.611);
+}
+#image{
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+}
+#second_pro{
+    display: flex;
+
+}
+/* Education */
+#Education{
+    height: 100vh;
 }
