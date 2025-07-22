@@ -7,10 +7,12 @@
   <link rel="stylesheet" href="myportfolio.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
-  <section id="overlay">
+  <div id="overlay">
       <div id="first_div">
         <div>
           <a href="">HOME</a>
@@ -77,13 +79,13 @@
         <div id="first"></div>
         <div id="second"></div>
       </div>
-  </section>
+    </div>
   <header id="top">
     <!-- top left section -->
     <section id="left_sec">
-        <a href="">Projects</a>
-        <a href="">About</a>
-        <a href="">Contact Me</a>
+        <a onclick="showCase('Projects')" href="">Projects</a>
+        <a onclick="showCase('About')" href="">About</a>
+        <a onclick="showCase('Contact')" href="">Contact Me</a>
     </section>
     <!-- top middle section -->
     <section id="middle">
@@ -152,16 +154,17 @@
     </section>
   </header>
   <main>
-    <section id="ABOUT">
+    <section id="About">
       <div>
         <h1 id="main_name">Hi, I'm Sudheer.</h1>
         <h1>Learning Web Development</h1>
+        <p>I like building complex websites and I'm constantly trying to improve my skills.</p>
       </div>
     </section>
-    <div id="pro_heading">
-      <h1>Projects</h1>
-    </div>
-    <section id="Projects">
+    <section id="Projects" >
+      <div id="pro_heading">
+        <h1>Projects</h1>
+      </div>
       <div id="first_pro">
         <div id="first_info">
           <p>Random Color Generator</p>
@@ -171,23 +174,108 @@
           <img src="Imges/ran_color.png" alt="">
         </div>
       </div>
-
+      
       <div id="second_pro">
         <div id="imag">
           <img src="Imges/pass_gen.png" alt="">
         </div>
         <div id="second_info">
-            <p>Random Password Generator</p>
-            <a href="https://i-amsudheer.github.io/Password-Generator/">← View Project</a>
+          <p>Random Password Generator</p>
+          <a href="https://i-amsudheer.github.io/Password-Generator/">← View Project</a>
+        </div>
+      </div>
+      <div id="third_pro">
+        <div id="third_info">
+          <p>Number guessing game</p>
+          <a href="">View Project →</a>
+        </div>
+        <div id="image">
+          <img src="Imges/number guess.png" alt="">
         </div>
       </div>
     </section>
-    <section id="Education"></section>
-    <section id="Skills"></section>
-    <section id="Contact"></section>
-    <section id="Footer"></section>
+    <section id="Skills" >
+      <h1 style="margin-bottom: 70px;">Skills</h1>
+      <div id="Frontend">
+        <div style="display: flex; flex-direction:column; align-items: center;">
+          <b>Frontend:</b>
+        </div>
+        <div style="display: flex;  align-items: center;">
+          <div style="display: flex; flex-direction:column; align-items: center;">
+            <img style="width: 80px; height: 60px;" src="/Imges/html.webp" alt="">
+            <p>Html</p>
+          </div>
+          <div style="display: flex; flex-direction:column; align-items: center;">
+            <img src="/Imges/css.png" alt="">
+            <p>CSS</p>
+          </div>
+          <div style="display: flex; flex-direction:column; align-items: center;">
+            <img style="width: 100px;" src="/Imges/js.png" alt="">
+            <p>JS Basics</p>
+          </div>
+        </div>
+      </div>
+      <div id="Programming">
+        <div style="display: flex; flex-direction:column; align-items: center;">
+          <b>Programming languages:</b>
+        </div>
+        <div style="display: flex; gap: 20px; justify-content: center;">
+          <div>
+            <img src="Imges/python.png" alt="">
+            <p>Python Basics</p>
+          </div>
+          <div>
+            <img src="Imges/java.png" alt="">
+            <p>Java Basics</p>
+          </div>
+        </div>
+      </div>
+      <h4>You Can Check My Profiles</h4>
+      <div>
+        <a href="https://www.hackerrank.com/profile/yalmarthisivasa1" target="_blank">
+         <img style="background-color: black; height: 40px; margin-right: 20px;" src="Imges/hackerrank.svg" alt="">
+        </a>
+        <a href="https://www.codechef.com/users/sudheer_y" target="_blank">
+         <img style="width: 90px;" src="Imges/codechef.svg" alt="">
+        </a> 
+      </div>
+    </section>
+    <!-- <section id="Education" >
+      <h1>Education</h1>
+      <table>
+        <tr>
+          <th>Location</th>
+          <th>Year</th>
+        </tr>
+        <tr>
+          <td>Tenali, Guntur</td>
+          <td>2023-2027</td>
+        </tr>
+      </table>
+    </section> -->
+    <section id="Contact" >
+      <div style="display: flex; justify-content: center;">
+        <h1>Contact Me</h1>
+      </div>
+      <div>
+
+        <label for="">Name *</label><br>
+        <input  type="text" placeholder="Your Name..."><br>
+        <label for="">Email Address *</label><br>
+        <input type="email" placeholder="Your Email Address..."><br>
+        <label for="">Message *</label><br>
+        <textarea type="text" placeholder="Your Message..." ></textarea>
+        <p style="margin-top: 30px;font-family: 'Poppins',sans-serif;">Submit →</p>
+      </div>
+    </section>
+    <section id="Footer">
+      <p>&copy; 2025 My Website</p>
+    </section>
+    <div>
+      
+    </div>
   </main>
-    <script src="myportofolio.js">
+  <script src="myportofolio.js">
   </script>
 </body>
 </html>

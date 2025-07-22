@@ -8,3 +8,10 @@ back.addEventListener("click",()=>{
         overlay.style.width="0%";
 })
 
+// function showCase(id){
+//         const sections = document.querySelectorAll("section");
+//         sections.forEach(section =>{
+//                 section.classList.remove("active");
+//         })
+//         document.getElementById(id).classList.add("active");    
+// }

@@ -59,7 +59,6 @@ header{
     #left_sec, #right_sec{
        display: None;
     }
-    
     #top{
         height: 60px;
         display: flex;
@@ -77,25 +76,46 @@ header{
         position: absolute;
         right:30px;
     }
+    #About{
+        height: 60vh;
+        margin: 10px;
+        padding-top: 250px;
+        padding-left: 50px;
+    }
     img{
         width: 350px;
         height: 350px;
     }
-    #first_pro{
+    #first_pro, #third_pro{
         display: flex;
         flex-direction:column-reverse;
         align-items: center;
         gap: 30px;
         margin-top: 30px;
     }
-    #second_pro{
+    #second_pro, #Skills{
         display: flex;
         flex-direction:column;
         align-items: center;
         gap: 30px;
         margin-top: 30px;
     }
-    
+    #Frontend, #Programming{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    input{
+        display: flex;
+        height: 40px;
+        padding-left: 10px;
+        width: 50%;
+        min-width: 300px;
+    }
+    textarea{
+        height: 100px;
+        width: 300px;
+    }
 }
 @media (min-width:773px){
     #top{
@@ -104,17 +124,23 @@ header{
         justify-content:space-evenly;
         gap: auto;
     } 
+    #About{
+    height: 60vh;
+    margin: 10px;
+    padding-top: 250px;
+    padding-left: 100px;
+    }
     img{
         width: 500px;
         height: 500px;
     }
-    #first_pro, #second_pro{
+    #first_pro, #second_pro, #third_pro{
         display: flex;
         justify-content: space-between;
         gap: 40px;
         padding: 80px;
     }
-    #first_info, #second_info{
+    #first_info, #second_info, #third_info{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -123,12 +149,36 @@ header{
         font-size: 30px;
     }
     h1{
-        font-size:75px;
+        font-size:60px;
     }
     #image{
         display: flex;
         justify-content: center;
         margin-left: 40px;
+    }
+    #Skills{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Frontend, #Programming{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        margin-bottom: 40px;
+    }
+  
+    input{
+        display: flex;
+        height: 40px;
+        padding-left: 10px;
+        width: 50%;
+        min-width: 600px;
+    }
+    textarea{
+        height: 100px;
+        width: 600px;
     }
 }
 /* overlay */
@@ -140,7 +190,7 @@ header{
     left: 0;
     background-color: rgba(0, 0, 0, 1);
     overflow-x: hidden;
-    /* transition: 0.5s; */
+    transition: 0.5s;
     z-index: 999;
     display: flex;
     justify-content: center;
@@ -163,14 +213,14 @@ header{
     color: white;
 }
 #bottom_div{
-   position: absolute;
-   bottom: 0;
-   width: 100%;
-   height: 80px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
    border-top: 1px solid rgb(39, 39, 39);
 }
 #back{
@@ -193,17 +243,22 @@ header{
     top: 0;
     
 }
+
 /* main */
+/* section{
+    display: none;
+    }
+    section.active{
+        display: block;
+        } */
 
-
-#ABOUT{
-    height: 60vh;
-    margin: 10px;
-    padding-top: 250px;
-    padding-left: 100px;
-}
 
 h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+h4{
     font-family: 'Playfair Display', serif;
     font-weight: bold;
 }
@@ -221,7 +276,41 @@ a{
     color: rgba(100, 113, 115, 0.611);
 }
 
+/* Skills */
+#Skills, #Education{
+    margin: 100px;
+    line-height: 30px;
+}
+#Skills img{
+    width: 60px;
+    height: 50px;
+}
+h4{
+    margin-top: 30px;
+}
 /* Education */
 #Education{
-    height: 100vh;
+    height: 50vh;
+}
+/* contact */
+#Contact{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+    padding: 30px;
+}
+
+label{
+    color: gray;
+}
+/*  footer */
+#Footer{
+    height: 30vh;
+    background-color: rgb(25, 24, 24);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,89 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills Section</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      background: #f0f0f0;
-      padding: 1rem;
-      gap: 2rem;
-    }
-
-    nav a {
-      cursor: pointer;
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
-    }
-
-    section {
-      display: none;
-      padding: 40px;
-      min-height: 100vh;
-      background-color: #fff;
-    }
-
-    section.active {
-      display: block;
+      padding: 20px;
     }
 
     h2 {
       text-align: center;
-      font-size: 2rem;
+      font-size: 28px;
     }
 
-    p {
-      max-width: 800px;
-      margin: 0 auto;
-      font-size: 1.1rem;
-      line-height: 1.6;
+    .section {
+      margin-top: 40px;
+    }
+
+    .category-title {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .skill {
+      text-align: center;
+      width: 100px;
+    }
+
+    .skill img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .skills-grid {
+        justify-content: center;
+      }
     }
   </style>
 </head>
 <body>
+  <!-- <h2>Skills</h2>
 
-  <!-- Navigation -->
-  <nav>
-    <a onclick="showSection('projects')">Projects</a>
-    <a onclick="showSection('about')">About</a>
-    <a onclick="showSection('contact')">Contact Me</a>
-  </nav>
+  <div class="section">
+    <div class="category-title">Frontend</div>
+    <div class="skills-grid">
+      <div class="skill"><img src="react.png" alt="ReactJS"><div>ReactJS</div></div>
+      <div class="skill"><img src="js.png" alt="JavaScript"><div>JavaScript</div></div>
+      <div class="skill"><img src="nextjs.png" alt="NextJS"><div>NextJS</div></div>
+      <div class="skill"><img src="css.png" alt="CSS"><div>CSS</div></div>
+      <div class="skill"><img src="angular.png" alt="Angular"><div>Angular</div></div>
+      <div class="skill"><img src="bootstrap.png" alt="Bootstrap"><div>Bootstrap</div></div>
+    </div>
+  </div>
 
-  <!-- Sections -->
-  <section id="projects" class="active">
-    <h2>Projects</h2>
-    <p>This is the projects section. Show your cool work here!</p>
-  </section>
-
-  <section id="about">
-    <h2>About</h2>
-    <p>This is the about section, like the screenshot you showed.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>This is the contact section. Add a form or your email here.</p>
-  </section>
-
-  <!-- JavaScript to toggle sections -->
-  <script>
-    function showSection(id) {
-      const sections = document.querySelectorAll("section");
-      sections.forEach(section => {
-        section.classList.remove("active");
-      });
-      document.getElementById(id).classList.add("active");
-    }
-  </script>
-
+  <div class="section">
+    <div class="category-title">Backend</div>
+    <div class="skills-grid">
+      <div class="skill"><img src="nodejs.png" alt="NodeJS"><div>NodeJS</div></div>
+      <div class="skill"><img src="rails.png" alt="Rails"><div>Rails</div></div>
+      <div class="skill"><img src="mongodb.png" alt="MongoDB"><div>MongoDB</div></div>
+      <div class="skill"><img src="cpp.png" alt="C++"><div>C++</div></div>
+    </div>
+  </div> -->
+<video width="300" autoplay muted loop>
+  <source src="Imges/Hello Rammante 4k Video Song ｜ Orange Movie ｜ Ram Charan, Genelia ｜ Harris Jayaraj.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 </body>
 </html>
